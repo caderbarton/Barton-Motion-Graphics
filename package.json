@@ -7,5 +7,9 @@
   "license": "UNLICENSED",
   "repository": {},
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "fastclick": "^1.0.6",
+    "font-awesome": "^4.7.0",
+    "gsap": "^3.11.2"
+  }
 }
