@@ -2,7 +2,7 @@
     background-image: url(../img/hero.jpg);
     background-size: cover; 
     background-position: center;
-    height: 80vh;  
+    height: 100vh;  
     #overlay{
         background-color:  rgba(var(--blacko),0.3);
         height:   100%;
@@ -33,9 +33,7 @@ color: var(--black);
 padding: 10px 20px;
 font-family: 'Fredoka One', cursive;
 font-weight: lighter;
-margin-top: 78px;
-margin-left: 34%;
-margin-right: 34%;
+
             }
         }
     } 

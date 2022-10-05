@@ -370,7 +370,7 @@ textarea {
   background-image: url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 100vh;
 }
 #hero #overlay {
   background-color: rgba(var(--blacko), 0.3);
@@ -397,7 +397,4 @@ textarea {
   padding: 10px 20px;
   font-family: "Fredoka One", cursive;
   font-weight: lighter;
-  margin-top: 78px;
-  margin-left: 34%;
-  margin-right: 34%;
 }
