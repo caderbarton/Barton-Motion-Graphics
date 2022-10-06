@@ -386,12 +386,12 @@ textarea {
   #hero #overlay section h1 {
     color: var(--white);
     font-family: "Fredoka One", cursive;
-    font-size: 3.75rem;
+    font-size: 2.5rem;
   }
   #hero #overlay section h2 {
     color: var(--white);
     font-family: "Fredoka One", cursive;
-    font-size: 3.75rem;
+    font-size: 2.5rem;
     padding-bottom: 125px;
   }
   #hero #overlay section button {
@@ -421,12 +421,12 @@ textarea {
   #hero #overlay section h1 {
     color: var(--white);
     font-family: "Fredoka One", cursive;
-    font-size: 3.75rem;
+    font-size: 3.125rem;
   }
   #hero #overlay section h2 {
     color: var(--white);
     font-family: "Fredoka One", cursive;
-    font-size: 3.75rem;
+    font-size: 3.125rem;
     padding-bottom: 125px;
   }
   #hero #overlay section button {
