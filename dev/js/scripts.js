@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 
-gsap.from("#h1",{duration:1,y:-200});
+gsap.from("#h1",{duration:1,y:-200, alpha:0});
 gsap.from("#h2",{duration:1,y:-100, alpha:0, delay: 1});
 gsap.from("#button",{duration:1,y:200, alpha:0, delay: 1});
 

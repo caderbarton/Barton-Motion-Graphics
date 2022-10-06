@@ -1,3 +1,95 @@
+@include sm{
+    #hero{ 
+        background-image: url(../img/hero.jpg);
+        background-size: cover; 
+        background-position: center;
+        height: 100vh;  
+        #overlay{
+            background-color:  rgba(var(--blacko),0.3);
+            height:   100%;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 32px;
+            padding-right: 32px;
+            section{
+                h1{
+                    color: var(--white);
+                    font-family: 'Fredoka One', cursive;
+                    
+                    font-size: rem-calc(60);
+    
+                }
+                h2{
+                    color: var(--white);
+                    font-family: 'Fredoka One', cursive;
+                    
+                    font-size: rem-calc(60);
+                    padding-bottom: 125px;
+                        }
+            
+                button{
+                    
+                    
+    border: none;
+    background-color: rgb(255, 234, 0);
+    color: var(--black);
+    padding: 10px 20px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: lighter;
+    margin-left: 33%;
+    
+                }
+            }
+        } 
+    }
+    }
+@include md{
+    #hero{ 
+        background-image: url(../img/hero.jpg);
+        background-size: cover; 
+        background-position: center;
+        height: 100vh;  
+        #overlay{
+            background-color:  rgba(var(--blacko),0.3);
+            height:   100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            section{
+                h1{
+                    color: var(--white);
+                    font-family: 'Fredoka One', cursive;
+                    
+                    font-size: rem-calc(60);
+    
+                }
+                h2{
+                    color: var(--white);
+                    font-family: 'Fredoka One', cursive;
+                    
+                    font-size: rem-calc(60);
+                    padding-bottom: 125px;
+                        }
+            
+                button{
+                    
+                    
+    border: none;
+    background-color: rgb(255, 234, 0);
+    color: var(--black);
+    padding: 10px 20px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: lighter;
+    margin-left: 0%;
+    
+                }
+            }
+        } 
+    }
+    }
+@include lg{
 #hero{ 
     background-image: url(../img/hero.jpg);
     background-size: cover; 
@@ -27,14 +119,17 @@
         
             button{
                 
+                
 border: none;
 background-color: rgb(255, 234, 0);
 color: var(--black);
 padding: 10px 20px;
 font-family: 'Fredoka One', cursive;
 font-weight: lighter;
+margin-left: 0%;
 
             }
         }
     } 
+}
 }
