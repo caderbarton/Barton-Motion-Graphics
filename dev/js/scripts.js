@@ -12,11 +12,32 @@ return tl
 var mainTl=gsap.timeline();
 mainTl.add(heroAnimation());
 
+
+
+
+var buttonSlide=200;
+let mm = gsap.matchMedia();
+
+mm.add (" (min-width: 768px)", () => {
+buttonSlide=200;
+});
+
+mm.add (" (max-width:767x)", () => {
+buttonSlide=0;
+});
+
+
+
+
+
+
 let resButton = document.querySelector("#button");
 
 var buttonAnimation=gsap.timeline({paused:true});
-    buttonAnimation.to("#button", {duration: 1, scale:2})
-    .to("#trails-btn i", {duration: 1, rotateY:180})
+    buttonAnimation.to("#button", {duration: 1, scale:2, x:buttonSlide})
+    .to("i", {duration:1, rotate:360},"open")
+    .to("#h1", {duration:1, alpha:0, x:-600}, "open")
+    .to ("h2", {duration:1,  alpha:0, x:-600}, "open");
 
 
 resButton.addEventListener("mouseover",function(){
