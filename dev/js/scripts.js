@@ -1,11 +1,28 @@
 import { gsap } from "gsap";
 
-gsap.from("#h1",{duration:1,y:-200, alpha:0});
-gsap.from("#h2",{duration:1,y:-100, alpha:0, delay: 1});
-gsap.from("#button",{duration:1,y:200, alpha:0, delay: 1});
+function heroAnimation(){
+    var tl = gsap. timeline() ;
 
-let reservation_button = document.querySelector("#button");
-reservation_button.addEventListener("mouseover", function(){
-    gsap.from("#button",{duration:1,scaleX:1})
-    gsap.from("i",{duration:1,rotate:360})
+tl.from("#h1",{duration:1,y:-200, alpha:0})
+.from("#h2",{duration:1,y:-100, alpha:0 },"2")
+.from("#button",{duration:1,y:200, alpha:0},"2");
+
+return tl
+}
+var mainTl=gsap.timeline();
+mainTl.add(heroAnimation());
+
+let resButton = document.querySelector("#button");
+
+var buttonAnimation=gsap.timeline({paused:true});
+    buttonAnimation.to("#button", {duration: 1, scale:2})
+
+
+resButton.addEventListener("mouseover",function(){
+    buttonAnimation.play();  
+})
+
+
+resButton.addEventListener("mouseout",function(){
+    buttonAnimation.reverse();
 })
