@@ -16,6 +16,7 @@ let resButton = document.querySelector("#button");
 
 var buttonAnimation=gsap.timeline({paused:true});
     buttonAnimation.to("#button", {duration: 1, scale:2})
+    .to("#trails-btn i", {duration: 1, rotateY:180})
 
 
 resButton.addEventListener("mouseover",function(){
