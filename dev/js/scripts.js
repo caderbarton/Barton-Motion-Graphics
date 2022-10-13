@@ -15,15 +15,15 @@ mainTl.add(heroAnimation());
 
 
 
-var buttonSlide=200;
+var buttonSlide= 300;
 let mm = gsap.matchMedia();
 
 mm.add (" (min-width: 768px)", () => {
-buttonSlide=200;
+buttonSlide= 250;
 });
 
-mm.add (" (max-width:767x)", () => {
-buttonSlide=0;
+mm.add (" (max-width:767px)", () => {
+buttonSlide= 0;
 });
 
 
@@ -41,7 +41,7 @@ var buttonAnimation=gsap.timeline({paused:true});
 
 
 resButton.addEventListener("mouseover",function(){
-    buttonAnimation.play();  
+    buttonAnimation.play();
 })
 
 
