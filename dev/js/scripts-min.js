@@ -1,1 +1,1 @@
-import{gsap}from"gsap";function heroAnimation(){return gsap.timeline()}var mainTimeline=gsap.core.Timeline.add();mainTimeline.add(heroAnimation);
+import{gsap}from"gsap";function heroAnimation(){var i=gsap.timeline();return i.from("#hero",{duration:1,x:300}),i}var mainTimeline=gsap.core.Timeline.add();mainTimeline.add(heroAnimation);

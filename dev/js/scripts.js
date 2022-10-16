@@ -19,7 +19,7 @@ import { gsap } from "gsap";
 
 function heroAnimation(){
     var tl =gsap.timeline();
-    
+    tl.from("#hero",{duration:1, x:300})
     
     
     
