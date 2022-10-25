@@ -426,7 +426,7 @@ textarea {
     Header
 ============= */
 header {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   left: 0;
   position: fixed;
   top: 0;
@@ -479,7 +479,7 @@ header > div #burger-container i {
   font-size: 1.875rem;
 }
 header > div #nav-container {
-  background-color: #222222;
+  background-color: rgba(255, 255, 255, 0);
   display: none;
   grid-area: nav;
   padding: 20px 10px 10px;

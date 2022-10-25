@@ -2,7 +2,7 @@
     Header
 ============= */
 header {
-    background-color: $white;
+    background-color: $clear;
     left: 0;
     position: fixed;
     top: 0;
@@ -62,7 +62,7 @@ header {
         }
 
         #nav-container {
-            background-color: $charcoal;
+            background-color: $clear;
             display: none;
             grid-area: nav;
             padding: 20px 10px 10px;
