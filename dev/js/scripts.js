@@ -5,17 +5,28 @@ import { GSDevTools } from "gsap/GSDevTools";
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 
-
+ 
 function simpleMotion(){
     var tl = gsap.timeline()
-    tl.to("#ball",{sclae:.25})
-     
+    tl.from("#ball3",{scale:.25, transformOrigin:"center"})
+    tl.from("#Vector2",{drawSVG:0, duration: .5})
+    tl.from("#ball1",{scale:.25, transformOrigin:"center"})
+    tl.from("#Vector3",{drawSVG:0, duration: .5})
+    tl.from("#ball2",{scale:.25, transformOrigin:"center"})
+    tl.from("#Vector1",{drawSVG:0, duration: .5})
+    tl.to(".circle",{scale:.25, transformOrigin:"center"})
+    tl.to(".line",{drawSVG:0, duration: .5})
 
-    return tl;
+
+    return tl;  
 }
 
 function patternMotion(){
     var tl = gsap.timeline()
+    tl.from(".oddtop",{drawSVG:0, duration: .5}) 
+    tl.from(".eventop",{drawSVG:0, duration: .5}) 
+    tl.from(".oddbottom",{drawSVG:0, duration: .5}) 
+    tl.from (".evenbottom",{drawSVG:0, duration: .5}) 
 
     return tl;
 }
