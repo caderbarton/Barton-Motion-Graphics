@@ -17,16 +17,6 @@
       "oAP" : "\/assets\/DrawSVG.fig",
       "oF" : 0
     },
-    "\/assets\/line-animation.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/line-animation.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/assets\/pattern-animation.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -37,11 +27,11 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/triangleball.svg" : {
+    "\/assets\/TriangleBall.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/triangleball.svg",
+      "oAP" : "\/assets\/TriangleBall.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
