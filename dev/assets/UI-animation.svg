@@ -1,0 +1,23 @@
+<svg width="1264" height="611" viewBox="0 0 1264 611" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="UI-animation">
+<rect width="1264" height="611" fill="white"/>
+<circle id="black2" cx="387.5" cy="283.5" r="60.5" stroke="black" stroke-width="64"/>
+<circle id="black2_2" cx="632.5" cy="283.5" r="60.5" stroke="black" stroke-width="64"/>
+<circle id="black2_3" cx="877.5" cy="283.5" r="60.5" stroke="black" stroke-width="64"/>
+<circle id="green" cx="387.5" cy="283.5" r="60.5" stroke="#82E871" stroke-width="64"/>
+<circle id="green_2" cx="632.5" cy="283.5" r="60.5" stroke="#82E871" stroke-width="64"/>
+<circle id="green_3" cx="877.5" cy="283.5" r="60.5" stroke="#82E871" stroke-width="64"/>
+<circle id="yellow" cx="387.5" cy="283.5" r="60.5" stroke="#E6E95E" stroke-width="64"/>
+<circle id="yellow_2" cx="632.5" cy="283.5" r="60.5" stroke="#E6E95E" stroke-width="64"/>
+<circle id="yellow_3" cx="877.5" cy="283.5" r="60.5" stroke="#E6E95E" stroke-width="64"/>
+<circle id="orange" cx="387.5" cy="283.5" r="60.5" stroke="#FEBD5B" stroke-width="64"/>
+<circle id="orange_2" cx="632.5" cy="283.5" r="60.5" stroke="#FEBD5B" stroke-width="64"/>
+<circle id="orange_3" cx="877.5" cy="283.5" r="60.5" stroke="#FEBD5B" stroke-width="64"/>
+<circle id="red" cx="387.5" cy="283.5" r="60.5" stroke="#FE5B5B" stroke-width="64"/>
+<circle id="red_2" cx="632.5" cy="283.5" r="60.5" stroke="#FE5B5B" stroke-width="64"/>
+<circle id="red_3" cx="877.5" cy="283.5" r="60.5" stroke="#FE5B5B" stroke-width="64"/>
+<circle id="black" cx="387.5" cy="283.5" r="60.5" stroke="black" stroke-width="64"/>
+<circle id="black_2" cx="632.5" cy="283.5" r="60.5" stroke="black" stroke-width="64"/>
+<circle id="black_3" cx="877.5" cy="283.5" r="60.5" stroke="black" stroke-width="64"/>
+</g>
+</svg>

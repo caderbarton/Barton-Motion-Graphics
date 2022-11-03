@@ -23,26 +23,32 @@ function simpleMotion(){
 
 function patternMotion(){
     var tl = gsap.timeline()
-    tl.from(".oddtop",{drawSVG:0, duration: .5}) 
-    tl.from(".eventop",{drawSVG:0, duration: .5}) 
-    tl.from(".oddbottom",{drawSVG:0, duration: .5}) 
-    tl.from (".evenbottom",{drawSVG:0, duration: .5}) 
-
+    .from(".oddbottom",{drawSVG:0, duration:2},{duration:2},"same2")
+    .from(".evenbottom",{drawSVG:0,duration:2},{duration:2},"same2")
+    .fromTo(".oddtop",{drawSVG:"50% 50%"},{duration:1, drawSVG: "0% 100%", stagger:.25},"same")
+    .fromTo(".eventop",{drawSVG:"50% 50%"},{duration:1, drawSVG: "0% 100%", stagger:.25},"same")
+  
     return tl;
-}
+}   
 
-function UIMotion(){
+function UIMotion(){  
 
     var tl = gsap.timeline()
-    
-    return tl;
-}
+    tl.from(".disk",{alpha:0,stagger:.25})
+    tl.to("#black",{drawSVG:0 , duration: 1,  ease: "bounce.out"})
+    tl.to("#red",{drawSVG: 30, duration: 1, ease: "bounce.out"})
+    tl.to("#orange",{drawSVG:60, duration: 1,  ease: "bounce.out"})
+    tl.to("#yellow",{drawSVG:90, duration: 1,  ease: "bounce.out"})
+    tl.to("#green",{drawSVG:120, duration: 1,  ease: "bounce.out"})
+    tl.to(".disk",{alpha:0,stagger:.05})
 
+} 
+ 
 
 var mainTL = gsap.timeline();
 mainTL.add(simpleMotion())
     .add(patternMotion())
-    .add(UIMotion());
+    .add(UIMotion()); 
 
 
 
