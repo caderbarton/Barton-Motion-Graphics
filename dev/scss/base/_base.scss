@@ -1,7 +1,10 @@
 /* =============
     Base
 ============= */
-
-.hide{
+.hidden{
+    visibility: hidden;
+}
+.hide{ 
+    
     display: none;
 }

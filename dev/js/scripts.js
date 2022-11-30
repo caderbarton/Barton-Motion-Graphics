@@ -1,54 +1,58 @@
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { GSDevTools } from "gsap/GSDevTools";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
+gsap.registerPlugin(MorphSVGPlugin);
 
 
  
-function simpleMotion(){
+function textaway(){
     var tl = gsap.timeline()
-    tl.from("#ball3",{scale:.25, transformOrigin:"center"})
-    tl.from("#Vector2",{drawSVG:0, duration: .25})
-    tl.from("#ball1",{scale:.25, transformOrigin:"center"})
-    tl.from("#Vector3",{drawSVG:0, duration: .25})
-    tl.from("#ball2",{scale:.25, transformOrigin:"center"})
-    tl.from("#Vector1",{drawSVG:0, duration: .25})
-    tl.to(".circle",{scale:.25, transformOrigin:"center"})
-    tl.to(".line",{drawSVG:0, duration: .25})
-
-
+    tl.to(".t",{alpha:0, stagger:-.1})
     return tl;  
 }
 
-function patternMotion(){
+function moveshapes(){
     var tl = gsap.timeline()
-    .from(".oddbottom",{drawSVG:0, duration:2},{duration:2},"same2")
-    .from(".evenbottom",{drawSVG:0,duration:2},{duration:2},"same2")
-    .fromTo(".oddtop",{drawSVG:"50% 50%"},{duration:1, drawSVG: "0% 100%", stagger:.25},"same")
-    .fromTo(".eventop",{drawSVG:"50% 50%"},{duration:1, drawSVG: "0% 100%", stagger:.25},"same")
-  
-    return tl;
-}   
-
-function UIMotion(){  
-
-    var tl = gsap.timeline()
-    tl.from(".disk",{alpha:0,stagger:.15})
-    tl.to("#black",{drawSVG:0 , duration: 1,  stagger:.25, ease: "bounce.out"})
-    tl.to("#red",{drawSVG: 20, duration: 1, stagger:.25, ease: "bounce.out"})
-    tl.to("#orange",{drawSVG:60, duration: 1,  stagger:.25, ease: "bounce.out"})
-    tl.to("#yellow",{drawSVG:120, duration: 1,  stagger:.25, ease: "bounce.out"})
-    tl.to("#green",{drawSVG:200, duration: 1,  stagger:.25, ease: "bounce.out"})
-    tl.to(".disk",{alpha:0,stagger:.05})
-
+    tl.to("#DBlueD",{duration:1, x:155, rotate:180, transformOrigin:'center',ease:"back.out(2)"},"same")
+    tl.to("#GreenD",{duration:1, morphSVG:"#Rectangle1",ease:"back.out(2)"},"same")
+    tl.from("#Ellipse1",{scale:0, transformOrigin:'center',ease:"back.out(2)"},"text")
+    tl.to("#LBlueD",{duration:1, morphSVG:"#Rectangle2",ease:"back.out(2)"},"same")
+    tl.from("#C", {alpha:0},"text")
+    tl.from("#Freelancer", {alpha:0},"text")
+    tl.from("#Employer", {alpha:0},"text")
+    tl.to("#Vector4", {drawSVG:"100%"},"text")
+    tl.to("#Vector5", {drawSVG:"100%"},"text") 
+    return tl;  
 } 
- 
+function moveshapesagain(){
+    var tl = gsap.timeline() 
+    tl.to("#DBlueD",{duration:.5, x:-1},"1")
+    tl.to("#GreenD",{duration:.5, morphSVG:"#GreenD2"},"1")
+    tl.to("#Ellipse1",{scale:0, transformOrigin:'center'},"1")
+    tl.to("#LBlueD",{duration:.5, morphSVG:"#LBlueD2"},"1")
+    tl.to("#C", {duration:.25, alpha:0},"1")
+    tl.to("#Freelancer", {duration:.25, alpha:0},"1")
+    tl.to("#Employer", {duration:.25,alpha:0},"1")
+    tl.to("#Vector4", {duration:.25,alpha:0},"1")
+    tl.to("#Vector5", {duration:.25,alpha:0},"1 ")
+    return tl;  
+}
+
+function textin(){
+    var tl = gsap.timeline()
+    tl.from(".t2",{y:20, alpha:0, stagger:-.1,ease:"back.out(5)"})
+    return tl;  
+}
+
 
 var mainTL = gsap.timeline();
-mainTL.add(simpleMotion())
-    .add(patternMotion())
-    .add(UIMotion()); 
+mainTL.add(textaway())
+mainTL.add(moveshapes())
+mainTL.add(moveshapesagain())
+mainTL.add(textin());
 
 
 
