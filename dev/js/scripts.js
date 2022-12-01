@@ -6,9 +6,9 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 function crystal(){
     var tl = gsap.timeline()
-    tl.from("#crys",{duration:5, alpha:0, stagger:.5})
+    tl.from("#crys",{duration:5, alpha:0, stagger:".25"})
     tl.to("#lines",{drawSVG:"0"})
-    tl.from("#sun",{clipPath:"0 100 0"})
+    tl.from("#sun",{duration:1, clipPath: 'inset(100% 0% 0%)', ease: "back.out(1.7)"})
 }
  
 
