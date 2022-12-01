@@ -12,9 +12,9 @@ function crystal(){
     tl.from("#Vector4",{duration:.5, alpha:0})
     tl.from("#Vector5",{duration:.5, alpha:0})
     tl.from("#Vector6",{duration:.5, alpha:0})
-    tl.from("#Vector7",{duration:.5, alpha:0})
-    tl.to("#lines",{drawSVG:"0"})
-    tl.from("#sun",{duration:2, clipPath: 'inset(0% 100% 0%)', ease: "bounce.out(2)"})
+    tl.from("#Vector7",{duration:.5, alpha:0},"same")
+    tl.from("#sun",{duration:2, clipPath: 'inset(0% 100% 0%)', ease: "bounce.out(2)"},"same")
+    tl.to("#s",{drawSVG:"100"})
 }
  
 
