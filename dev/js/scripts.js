@@ -14,7 +14,7 @@ function crystal(){
     tl.from("#Vector6",{duration:.5, alpha:0})
     tl.from("#Vector7",{duration:.5, alpha:0},"same")
     tl.from("#sun",{duration:2, clipPath: 'inset(0% 100% 0%)', ease: "bounce.out(2)"},"same")
-    tl.from("#letters",{duration:2, morphSVG:"#sun"})
+    tl.from("#saltopia",{duration:30, drawSVG:"100%"})
 }
  
 
