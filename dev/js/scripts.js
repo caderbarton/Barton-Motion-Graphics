@@ -1,9 +1,9 @@
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import { GSDevTools } from "gsap/GSDevTools";
+// import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
+gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
 
 
@@ -23,8 +23,8 @@ function moveshapes(){
     tl.from("#C", {alpha:0},"text")
     tl.from("#Freelancer", {alpha:0},"text")
     tl.from("#Employer", {alpha:0},"text")
-    tl.to("#Vector4", {drawSVG:"100%"},"text")
-    tl.to("#Vector5", {drawSVG:"100%"},"text") 
+    tl.from("#Vector4", {duration:3, y:-300},"text")
+    tl.from("#Vector5", {duration:3, y:300},"text") 
     return tl;  
 } 
 function moveshapesagain(){
@@ -55,5 +55,3 @@ mainTL.add(moveshapesagain())
 mainTL.add(textin());
 
 
-
-GSDevTools.create();
