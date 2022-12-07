@@ -6,18 +6,19 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 function crystal(){
     var tl = gsap.timeline()
-    tl.from("#Vector1",{duration:.5, alpha:0})
-    tl.from("#Vector2",{duration:.5, alpha:0})
-    tl.from("#Vector3",{duration:.5, alpha:0})
-    tl.from("#Vector4",{duration:.5, alpha:0})
-    tl.from("#Vector5",{duration:.5, alpha:0})
-    tl.from("#Vector6",{duration:.5, alpha:0})
-    tl.from("#Vector7",{duration:.5, alpha:0},"same")
-    tl.from("#sun",{duration:2, clipPath: 'inset(0% 100% 0%)', ease: "bounce.out(2)"},"same")
-    tl.from("#saltopia",{duration:30, drawSVG:"100%"})
+    tl.from("#Vector1",{duration:.5, alpha:0});
+    tl.from("#Vector2",{duration:.5, alpha:0});
+    tl.from("#Vector3",{duration:.5, alpha:0});
+    tl.from("#Vector4",{duration:.5, alpha:0});
+    tl.from("#Vector5",{duration:.5, alpha:0});
+    tl.from("#Vector6",{duration:.5, alpha:0});
+    tl.from("#Vector7",{duration:.5, alpha:0});
+    tl.from("#clip",{duration:1, transformOrigin:"center", scale:0},"same")
+    tl.fromTo("#stroke",{drawSVG:"75% 75%"},{duration:2, drawSVG:"125% 25%"},"same");
+    return tl;
 }
  
-
+ 
  
 
 
