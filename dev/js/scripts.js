@@ -1,8 +1,8 @@
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import { GSDevTools } from "gsap/GSDevTools";
+// import { GSDevTools } from "gsap/GSDevTools";
 
-gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
+gsap.registerPlugin(DrawSVGPlugin);
 
 function crystal(){
     var tl = gsap.timeline()
@@ -25,5 +25,3 @@ function crystal(){
 
 var mainTL=gsap.timeline();
 mainTL.add(crystal())
-
-GSDevTools.create();
